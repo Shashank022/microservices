@@ -23,6 +23,4 @@ public class VaccinationController {
         VaccinationCenter vacCenterAdded = repo.save(vacCenter);
         return  new ResponseEntity<>(vacCenterAdded, HttpStatus.OK);
     }
-
-
 }
