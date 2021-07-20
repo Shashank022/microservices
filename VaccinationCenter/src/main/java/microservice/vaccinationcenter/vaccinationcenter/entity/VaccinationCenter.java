@@ -20,5 +20,5 @@ public class VaccinationCenter {
     private String centerName;
 
     @Column
-    private int centerAddress;
+    private String centerAddress;
 }

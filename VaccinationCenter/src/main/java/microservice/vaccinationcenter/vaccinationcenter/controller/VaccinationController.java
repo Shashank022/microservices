@@ -21,6 +21,6 @@ public class VaccinationController {
     @PostMapping(path = "/add")
     public ResponseEntity<VaccinationCenter> addCitizen(@RequestBody VaccinationCenter vacCenter){
         VaccinationCenter vacCenterAdded = repo.save(vacCenter);
-        return  new ResponseEntity<>(vacCenterAdded, HttpStatus.OK);
+        return  new ResponseEntity<VaccinationCenter>(vacCenterAdded, HttpStatus.OK);
     }
 }
