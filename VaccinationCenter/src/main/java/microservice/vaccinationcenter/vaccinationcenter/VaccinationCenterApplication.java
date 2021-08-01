@@ -13,6 +13,7 @@ public class VaccinationCenterApplication {
     }
 
     @Bean
+    @LoadBalanced
     public RestTemplate getRestTemplate(){
         return new RestTemplate();
     }
