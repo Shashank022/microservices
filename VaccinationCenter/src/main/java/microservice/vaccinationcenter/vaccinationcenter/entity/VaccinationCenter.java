@@ -16,9 +16,7 @@ public class VaccinationCenter {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-    @Column
     private String centerName;
 
-    @Column
     private String centerAddress;
 }

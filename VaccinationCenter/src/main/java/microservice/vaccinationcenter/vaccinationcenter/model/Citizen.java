@@ -15,9 +15,7 @@ public class Citizen {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-    @Column
     private String name;
 
-    @Column
     private int vaccinationCenterId;
 }
