@@ -15,7 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/vaccinationcenter")
-public class VaccinationController {
+public class  VaccinationController {
 
     @Autowired
     CenterRepo repo;
@@ -33,7 +33,7 @@ public class VaccinationController {
         RequiredResponse requiredResponse = new RequiredResponse();
          VaccinationCenter vacCenter= repo.findById(id).get();
          requiredResponse.setCenter(vacCenter);
-        List<Citizen> listofCitizen = restTemplate.getForObject("http://localhost:8081/citizen/id/"+id, List.class);
+        List<Citizen> listofCitizen = restTemplate.getForObject("http://CITIZEN-SERVICE/citizen/id/"+id, List.class);
         requiredResponse.setCitizens(listofCitizen);
         return new ResponseEntity<RequiredResponse>(requiredResponse, HttpStatus.OK);
     }
