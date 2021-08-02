@@ -1,4 +1,9 @@
-/VaccinationCenter/target/
-/CitizenService/target/
-/VaccinationCenter/target/
-/EurekaServer/target/
+/target/
+/.classpath
+/*.project
+/.settings
+/*.springBeans
+.classpath
+.idea/
+*.iml
+*.iws
